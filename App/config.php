@@ -9,3 +9,4 @@
     
     //Defenir un consonante global
     define("URL",$url);
+    define("URL_PATH",$folder);
