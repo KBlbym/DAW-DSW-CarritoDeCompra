@@ -44,6 +44,7 @@
             $stm->bindValue(":id", $id);
             $stm->execute();
         }
+        
         public function insert($data){
             $sql = "INSERT INTO {$this->table} (";
             foreach ($data as $key => $value) {
@@ -64,6 +65,12 @@
             }
             
             $stm->execute();
+        }
+
+        public function orderBy($by, $order = "ASC"){
+            $stm = $this->db->prepare("SELECT * FROM {$this->table} ORDER BY {$by} {$order}");
+            $stm->execute();
+            return $stm->fetchAll();
         }
 
     }
