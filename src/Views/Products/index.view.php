@@ -1,7 +1,7 @@
 <?php
+    $totalItem =0 ;
     if(isset($_COOKIE['cart'])){
         $cart = json_decode($_COOKIE['cart'], true);
-        $totalItem =0 ;
         foreach($cart as $item){
             $totalItem += $item['count'];
         }
@@ -20,7 +20,7 @@
         <ul>
             <li><a href="<?= URL_PATH ?>/home">Home</a></li>
             <li><a href="<?= URL_PATH ?>/products">Productos</a></li>
-            <li><a href="<?= URL_PATH ?>/cart">🛒<sup id="count"><?=  $totalItem  ?></sup></a></li>
+            <li><a href="<?= URL_PATH ?>/cart">🛒<sup id="count"><?=  $totalItem ?></sup></a></li>
         </ul>
     </nav>
     <h1>Lista de Productos</h1>

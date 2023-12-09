@@ -11,3 +11,8 @@ sup{
     padding: 0 4px;
     
 }
+.alert{
+    background-color: rgb(251, 160, 160);
+    color: rgb(46, 82, 46);
+    padding: 20px;
+}
