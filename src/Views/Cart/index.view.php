@@ -5,15 +5,7 @@
         $cart = json_decode($_COOKIE['cart'], true);
     }
     ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de compra</title>
-    <link rel="stylesheet" href="<?= URL_PATH ?>/assets/css/site.css">
-</head>
-<body>
+    
     <h1>Carrito de compra</h1>
     <?php if($cart) : ?>
     <form action="<?= URL_PATH ?>/Cart/clearCart" method="post">
@@ -62,5 +54,3 @@
     <?php else: ?>
         <div class="alert">No hay productos en el carrito de compra <a href="<?= URL_PATH ?>/products">ir a página de compra</a></div>
     <?php endif; ?>
-</body>
-</html>
