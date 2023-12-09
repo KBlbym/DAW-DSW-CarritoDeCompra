@@ -1,0 +1,13 @@
+sup{
+    display: inline-block;
+    font-size: 12px;
+    color: #191919;
+    line-height: 14px;
+    background-color: #e9b0b0;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: 700;
+    min-height: 9px;
+    padding: 0 4px;
+    
+}
